@@ -1,0 +1,12 @@
+{
+  "title": "Clubkit",
+  "description": "Project for ACM",
+  "icons": "BookCheck",
+  "root": true,
+  "pages": [
+    "---Introduction---",
+    "index.mdx",
+    "---Writing---",
+    "bro.mdx"
+  ]
+}
