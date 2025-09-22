@@ -1,6 +1,5 @@
 import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
 import Image from 'next/image';
-import Logo from '@/public/acm_oss_logo.png'
 
 /**
  * Shared layout configurations
@@ -14,8 +13,9 @@ export const logo = (
   <>
     <Image
       alt="ACM Projects"
-      src={Logo}
-      sizes="100px"
+      src="/img/acm_oss_logo.png"
+      width={24}
+      height={24}
       className="w-6"
       aira-label="ACM Projects"
     />

@@ -8,7 +8,7 @@ const inter = Inter({
 
 export const metadata = {
   title: 'ACM Projects',
-  description: 'ACM Projects Documentation'
+  description: 'ACM Projects Documentation',
 }
 
 export default function Layout({ children }: LayoutProps<'/'>) {

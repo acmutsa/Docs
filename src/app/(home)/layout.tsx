@@ -7,10 +7,31 @@ export default function Layout({ children }: LayoutProps<'/'>) {
       {...baseOptions()}
       links={[
         {
+          text: 'Hackkit',
+          url: '/hackkit',
+          active: 'url'
+        },
+        {
+          text: 'Clubkit',
+          url: '/clubkit',
+          active: 'url'
+        },
+        {
+          text: 'O Tools',
+          url: '/otools',
+          active: 'url'
+        },
+        {
+          text: 'Critiq',
+          url: '/critiq',
+          active: 'url'
+        },
+        {
           text: 'Documentation',
           url: '/docs',
           active: 'nested-url'
         },
+        
       ]}
     >
       {children}
