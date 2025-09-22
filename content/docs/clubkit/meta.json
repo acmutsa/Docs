@@ -1,7 +1,7 @@
 {
   "title": "Clubkit",
   "description": "Project for ACM",
-  "icons": "BookCheck",
+  "icon": "Users",
   "root": true,
   "pages": [
     "---Introduction---",
