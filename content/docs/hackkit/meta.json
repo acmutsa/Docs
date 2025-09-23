@@ -2,5 +2,12 @@
   "title": "Hackkit",
   "description": "Project for ACM",
   "icon": "MessageSquareCode",
-  "root": true
+  "root": true,
+  "pages": [
+    "---Introduction---",
+    "intro.mdx",
+    "gt.mdx",
+    "---Writing---",
+    "info.mdx"
+  ]
 }

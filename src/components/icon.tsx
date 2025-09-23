@@ -14,7 +14,7 @@ export default function IconContainer({
       {...props}
       className={props.className}
     >
-      {Icon ? <Icon /> : <TerminalIcon />}
+      {Icon ? <Icon stroke='lightblue' /> : <TerminalIcon />}
     </div>
   );
 }

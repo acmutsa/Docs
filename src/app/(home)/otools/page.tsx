@@ -1,16 +1,16 @@
 import Link from 'next/link';
 
-export default function HomePage() {
+export default function OTools() {
   return (
     <main className="flex flex-1 flex-col justify-center text-center">
-      <h1 className="mb-4 text-2xl font-bold">Landing Page</h1>
+      <h1 className="mb-4 text-2xl font-bold">OTools Page</h1>
       <p className="text-fd-muted-foreground">
         You can open{' '}
         <Link
-          href="/docs"
+          href="/docs/otools"
           className="text-fd-foreground font-semibold underline"
         >
-          /docs
+          /docs/otools
         </Link>{' '}
         and see the documentation.
       </p>

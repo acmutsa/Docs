@@ -1,0 +1,13 @@
+{
+    "title": "Critiq",
+    "description": "Project for ACM",
+    "icon": "SearchCode",
+    "root": true,
+    "pages": [
+        "---Introduction---",
+        "intro.mdx",
+        "gt.mdx",
+        "---Writing---",
+        "info.mdx"
+    ]
+}

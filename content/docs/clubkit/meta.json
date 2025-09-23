@@ -5,8 +5,9 @@
   "root": true,
   "pages": [
     "---Introduction---",
-    "index.mdx",
+    "intro.mdx",
+    "gt.mdx",
     "---Writing---",
-    "bro.mdx"
+    "info.mdx"
   ]
 }

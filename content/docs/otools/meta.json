@@ -1,0 +1,13 @@
+{
+    "title": "OTools",
+    "description": "Project for ACM",
+    "icon": "Hammer",
+    "root": true,
+    "pages": [
+        "---Introduction---",
+        "intro.mdx",
+        "gt.mdx",
+        "---Writing---",
+        "info.mdx"
+    ]
+}
