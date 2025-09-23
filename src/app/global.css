@@ -1,3 +1,8 @@
 @import 'tailwindcss';
 @import 'fumadocs-ui/css/neutral.css';
 @import 'fumadocs-ui/css/preset.css';
+
+#nd-sidebar [data-active="true"] {
+  background-color: rgba(76, 85, 117, 0.674) !important; /* new bg */
+  color: #d1e8ff !important; /* new text color */
+}
