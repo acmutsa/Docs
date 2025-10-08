@@ -1,4 +1,5 @@
 import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import { Darker_Grotesque } from 'next/font/google';
 import Image from 'next/image';
 
 /**
@@ -13,7 +14,7 @@ export const logo = (
   <>
     <Image
       alt="ACM Projects"
-      src="/img/acm_oss_logo.png"
+      src="/img/ACMProjectsLogo.webp"
       width={24}
       height={24}
       className="w-6"
@@ -31,6 +32,9 @@ export function baseOptions(): BaseLayoutProps {
           ACM OSS
         </>
       ),
+    },
+    themeSwitch: {
+      enabled: true
     },
     // see https://fumadocs.dev/docs/ui/navigation/links
     links: [],

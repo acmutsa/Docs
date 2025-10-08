@@ -6,25 +6,25 @@ export default function Layout({ children }: LayoutProps<'/'>) {
     <HomeLayout {...baseOptions()}
     links={[
       {
-        text: 'Hackkit',
+        text: 'HackKit',
         url: '/hackkit',
         active: 'url'
       },
       {
-        text: 'Clubkit',
+        text: 'ClubKit',
         url: '/clubkit',
         active: 'url'        
       },
-      {
-        text: 'OTools',
-        url: '/otools',
-        active: 'url'
-      },
-      {
-        text: 'Critiq',
-        url: '/critiq',
-        active: 'url'
-      },
+      // {
+      //   text: 'OTools',
+      //   url: '/otools',
+      //   active: 'url'
+      // },
+      // {
+      //   text: 'Critiq',
+      //   url: '/critiq',
+      //   active: 'url'
+      // },
       {
         text: 'Documentation',
         url: '/docs',
