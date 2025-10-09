@@ -4,16 +4,16 @@ import {
   CalendarCheck,
   ServerCog,
   Users,
-  Ticket,
+  UserCheck,
   ShieldCheck,
   Rocket,
   ArrowRight,
 } from "lucide-react";
 
 export const metadata = {
-  title: "Clubkit — Online Hackathon Software",
+  title: "ClubKit — Online Club Software",
   description:
-    "Feature-packed hackathon management: registration, check-in, passes, judging, schedule, and an admin panel that just works.",
+    "Open-source platform developed by members of UTSA ACM.",
 };
 
 export default function Clubkit() {
@@ -24,16 +24,15 @@ export default function Clubkit() {
         <div className="mx-auto max-w-4xl">
           <span className="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-medium">
             <Users className="h-3.5 w-3.5" aria-hidden />
-            Battle-tested for real events
+            Create, Manage, and Grow Clubs Online.
           </span>
 
           <h1 className="mt-6 text-4xl font-extrabold tracking-tight sm:text-5xl bg-gradient-to-b from-gray via-blue-600 to-blue-700 dark:from-white dark:via-blue-600 dark:to-blue-700 text-transparent bg-clip-text">
             ClubKit
           </h1>
           <p className="mt-4 text-lg text-fd-foreground">
-            Feature-packed hackathon management software that just works.
-            Registration, passes, judging, schedule, and an easy admin panel —
-            all in one place.
+            Built by students, for students. ClubKit helps universities streamline club management,
+            events, memberships, and engagement through one powerful open-souce platform.
           </p>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -60,23 +59,23 @@ export default function Clubkit() {
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <Feature
             icon={<Users className="h-5 w-5" aria-hidden />}
-            title="Seamless Registration"
-            desc="Applications, confirmations, and communication with minimal setup."
-          />
-          <Feature
-            icon={<Ticket className="h-5 w-5" aria-hidden />}
-            title="Passes & Check In"
-            desc="Generate event passes and scan at the door for speedy check in."
+            title="Membership Tracking"
+            desc="Keep real-time data on active membership participation."
           />
           <Feature
             icon={<CalendarCheck className="h-5 w-5" aria-hidden />}
-            title="Schedule & Announcements"
-            desc="Publish agendas, workshops, and push updates during the event."
+            title="Event Creation & Management"
+            desc="Schedule and organize club meetings, social events, and workshops."
+          />
+          <Feature
+            icon={<UserCheck className="h-5 w-5" aria-hidden />}
+            title="Check-In System"
+            desc="Quick and simple attendance check-ins for any event."
           />
           <Feature
             icon={<ShieldCheck className="h-5 w-5" aria-hidden />}
             title="Admin Panel"
-            desc="Moderate users, teams, and submissions with role-based access."
+            desc="Moderate clubs and users with role-based access."
           />
           <Feature
             icon={<ServerCog className="h-5 w-5" aria-hidden />}
@@ -103,13 +102,13 @@ export default function Clubkit() {
             />
             <Step
               n="2"
-              title="Launch Registration"
-              desc="Open applications, manage approvals, send notifications."
+              title="Host ClubKit"
+              desc="Connect and empower your student organizations."
             />
             <Step
               n="3"
-              title="Run the Event"
-              desc="Check-in, schedule updates, judging, and live announcements."
+              title="Grow Your Club"
+              desc="Schedule events, view statistics, and send announcements"
             />
           </ol>
           <div className="mt-6 text-center">
@@ -125,24 +124,20 @@ export default function Clubkit() {
         <div className="mx-auto max-w-4xl">
           <h2 className="text-2xl font-bold">FAQ</h2>
           <div className="mt-6 space-y-4">
-            <Faq
+            {/* <Faq
               q="Can I have an introduction to HackKit?"
               a={`Running a hackathon is tough — from last-minute package delays to food order mix-ups, there’s always something unexpected. HackKit can’t fix logistics, but it can handle the tech that makes your event run smoothly.
-With battle-tested tools for registration, check-in, passes, scheduling, judging, and an easy admin panel, HackKit helps your team focus on what matters: building a great experience.
+                  With battle-tested tools for registration, check-in, passes, scheduling, judging, and an easy admin panel, HackKit helps your team focus on what matters: building a great experience.
 
-Want to dive in? Explore our OSS docs (updated as features ship), or join our Discord to connect, share feedback, and get support.`}
-            />
+                  Want to dive in? Explore our OSS docs (updated as features ship), or join our Discord to connect, share feedback, and get support.`}
+            /> */}
             <Faq
-              q="Is HackKit open source?"
+              q="Is ClubKit open source?"
               a="Yes — MIT licensed. You can self-host, extend, and contribute."
             />
             <Faq
               q="What do I need to deploy?"
               a="A Next.js host (e.g., Vercel) and a SQL database. Check the docs for environment variables and adapters."
-            />
-            <Faq
-              q="Does it support judging?"
-              a="Yes — submissions, scoring, and results are part of the standard flow or can be added as a package/module."
             />
           </div>
         </div>
@@ -151,7 +146,7 @@ Want to dive in? Explore our OSS docs (updated as features ship), or join our Di
       {/* Final CTA */}
       <section className="px-6 pb-24 text-center">
         <div className="mx-auto max-w-3xl rounded-2xl border p-8 shadow-sm">
-          <h3 className="text-xl font-bold">Ready to run your next hackathon?</h3>
+          <h3 className="text-xl font-bold">Ready to bring ClubKit to your university?</h3>
           <p className="mt-2 text-fd-muted-foreground">
             Start with the docs or jump straight into the codebase.
           </p>
