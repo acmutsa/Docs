@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function Hackkit() {
   return (
-    <main className="flex flex-1 flex-col">
+    <main className="flex flex-1 flex-col bg-gradient-to-br from-gray-700 via-gray-600 to-gray-500 dark:from-gray-800 dark:via-gray-700 dark:to-gray-500 text-white dark:text-fd-foreground">
       {/* Hero */}
       <section className="px-6 py-16 md:py-24 text-center">
         <div className="mx-auto max-w-4xl">
