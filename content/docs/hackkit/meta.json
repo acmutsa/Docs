@@ -6,7 +6,7 @@
   "pages": [
     "---Introduction---",
     "intro.mdx",
-    "gt.mdx",
+    "getting-started.mdx",
     "---Writing---",
     "info.mdx"
   ]
