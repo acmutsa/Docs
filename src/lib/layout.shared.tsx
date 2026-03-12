@@ -1,6 +1,6 @@
-import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
-import { Darker_Grotesque } from 'next/font/google';
-import Image from 'next/image';
+import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
+import { Darker_Grotesque } from "next/font/google";
+import Image from "next/image";
 
 /**
  * Shared layout configurations
@@ -21,7 +21,7 @@ export const logo = (
       aira-label="ACM Projects"
     />
   </>
-)
+);
 
 export function baseOptions(): BaseLayoutProps {
   return {
@@ -34,10 +34,10 @@ export function baseOptions(): BaseLayoutProps {
       ),
     },
     themeSwitch: {
-      enabled: true
+      enabled: false,
     },
     // see https://fumadocs.dev/docs/ui/navigation/links
     links: [],
-    githubUrl: 'https://github.com/',
+    githubUrl: "https://github.com/acmutsa",
   };
 }
