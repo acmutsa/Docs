@@ -34,7 +34,7 @@ export function baseOptions(): BaseLayoutProps {
       ),
     },
     themeSwitch: {
-      enabled: true,
+      enabled: false,
     },
     // see https://fumadocs.dev/docs/ui/navigation/links
     links: [],

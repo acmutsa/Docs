@@ -16,7 +16,7 @@ export const metadata = {
 export default function Layout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={inter.className} suppressHydrationWarning>
-      <body className="flex flex-col min-h-screen bg-[#020617] text-white">
+      <body className="flex flex-col min-h-screen bg-[#020617] text-white dark">
         <Banner id="under-construction">
           Caution 🚧: This site is under construction
         </Banner>

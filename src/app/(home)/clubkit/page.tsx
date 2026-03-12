@@ -12,13 +12,12 @@ import {
 
 export const metadata = {
   title: "ClubKit — Online Club Software",
-  description:
-    "Open-source platform developed by members of UTSA ACM.",
+  description: "Open-source platform developed by members of UTSA ACM.",
 };
 
 export default function Clubkit() {
   return (
-    <main className="flex flex-1 flex-col bg-linear-to-br from-[#949494] to-[#89daff] dark:from-[#373B44] dark:to-[#254c8a]">
+    <main className="flex flex-1 flex-col">
       {/* Hero */}
       <section className="px-6 py-16 md:py-24 text-center">
         <div className="mx-auto max-w-4xl">
@@ -27,12 +26,13 @@ export default function Clubkit() {
             Create, Manage, and Grow Clubs Online.
           </span>
 
-          <h1 className="mt-6 text-4xl font-extrabold tracking-tight sm:text-5xl bg-gradient-to-b from-gray via-blue-600 to-blue-700 dark:from-white dark:via-blue-600 dark:to-blue-700 text-transparent bg-clip-text">
+          <h1 className="mt-6 text-4xl font-extrabold tracking-tight sm:text-5xl">
             ClubKit
           </h1>
           <p className="mt-4 text-lg text-fd-foreground">
-            Built by students, for students. ClubKit helps universities streamline club management,
-            events, memberships, and engagement through one powerful open-souce platform.
+            Built by students, for students. ClubKit helps universities
+            streamline club management, events, memberships, and engagement
+            through one powerful open-souce platform.
           </p>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -92,7 +92,7 @@ export default function Clubkit() {
 
       {/* How it works */}
       <section className="px-6 py-12">
-        <div className="mx-auto max-w-5xl">
+        <div className="mx-auto max-w-6xl">
           <h2 className="text-2xl font-bold">How it works</h2>
           <ol className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
             <Step
@@ -112,7 +112,10 @@ export default function Clubkit() {
             />
           </ol>
           <div className="mt-6 text-center">
-            <Link href="/docs/clubkit/intro" className="font-semibold underline">
+            <Link
+              href="/docs/clubkit/intro"
+              className="font-semibold underline"
+            >
               Full setup guide →
             </Link>
           </div>
@@ -121,7 +124,7 @@ export default function Clubkit() {
 
       {/* FAQ */}
       <section className="px-6 pb-20">
-        <div className="mx-auto max-w-4xl">
+        <div className="mx-auto max-w-6xl">
           <h2 className="text-2xl font-bold">FAQ</h2>
           <div className="mt-6 space-y-4">
             {/* <Faq
@@ -146,7 +149,9 @@ export default function Clubkit() {
       {/* Final CTA */}
       <section className="px-6 pb-24 text-center">
         <div className="mx-auto max-w-3xl rounded-2xl border p-8 shadow-sm">
-          <h3 className="text-xl font-bold">Ready to bring ClubKit to your university?</h3>
+          <h3 className="text-xl font-bold">
+            Ready to bring ClubKit to your university?
+          </h3>
           <p className="mt-2 text-fd-muted-foreground">
             Start with the docs or jump straight into the codebase.
           </p>

@@ -3,11 +3,5 @@
   "description": "Project for ACM",
   "icon": "MessageSquareCode",
   "root": true,
-  "pages": [
-    "---Introduction---",
-    "what-is-hackkit.mdx",
-    "getting-started.mdx",
-    "---Writing---",
-    "info.mdx"
-  ]
+  "pages": ["---Introduction---", "what-is-hackkit.mdx", "getting-started.mdx"]
 }
