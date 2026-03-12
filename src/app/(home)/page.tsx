@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function HomePage() {
   return (
-    <main className="flex flex-1 flex-col bg-[#020617] text-white">
+    <main className="flex flex-1 flex-col">
       {/* Hero */}
       <section className="px-6 py-16 md:pb-16 md:pt-50 text-center h-screen">
         <div className="flex flex-col items-center mx-auto max-w-5xl">

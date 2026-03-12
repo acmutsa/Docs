@@ -1,5 +1,6 @@
 import "@/app/global.css";
 import { Banner } from "@/components/banner";
+import Footer from "@/components/footer";
 import { RootProvider } from "fumadocs-ui/provider";
 import { Inter } from "next/font/google";
 
@@ -15,11 +16,12 @@ export const metadata = {
 export default function Layout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={inter.className} suppressHydrationWarning>
-      <body className="flex flex-col min-h-screen">
+      <body className="flex flex-col min-h-screen bg-[#020617] text-white">
         <Banner id="under-construction">
           Caution 🚧: This site is under construction
         </Banner>
         <RootProvider>{children}</RootProvider>
+        <Footer />
       </body>
     </html>
   );
