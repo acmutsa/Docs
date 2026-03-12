@@ -4,11 +4,11 @@ import {
   type ComponentProps,
   createContext,
   use,
-  useEffectEvent,
   useLayoutEffect,
   useMemo,
   useRef,
   useState,
+  useCallback,
 } from 'react';
 import * as Primitive from '@radix-ui/react-tabs';
 import { mergeRefs } from '../lib/merge-refs';
@@ -64,7 +64,7 @@ export function Tabs({
       ? // eslint-disable-next-line react-hooks/rules-of-hooks -- not supposed to change controlled/uncontrolled
         useState(defaultValue)
       : // eslint-disable-next-line react-hooks/rules-of-hooks -- not supposed to change controlled/uncontrolled
-        [_value, useEffectEvent((v: string) => _onValueChange?.(v))];
+        [_value, useCallback((v: string) => _onValueChange?.(v), [_onValueChange])];
 
   useLayoutEffect(() => {
     if (!groupId) return;

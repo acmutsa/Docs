@@ -4,12 +4,16 @@ import Profile from "@/components/profile";
 import { teamMembers } from "@/utils/team";
 import ShowcaseCard from "@/components/showcase/card";
 import Image from "next/image";
+import CoolShader from "./cool-shader";
 
 export default function HomePage() {
   return (
     <main className="flex flex-1 flex-col">
       {/* Hero */}
       <section className="px-6 py-16 md:pb-16 md:pt-50 text-center h-screen">
+        <div className="absolute top-20 left-0 h-full w-full z-[-1]">
+          <CoolShader />
+        </div>
         <div className="flex flex-col items-center mx-auto max-w-5xl">
           <h1 className="mt-6 md:text-6xl font-extrabold tracking-tight text-5xl">
             Open <span className="text-blue-500">Software</span> for{" "}
