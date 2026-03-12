@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function Hackkit() {
   return (
-    <main className="flex flex-1 flex-col bg-gradient-to-br from-gray-700 via-gray-600 to-gray-500 dark:from-gray-800 dark:via-gray-700 dark:to-gray-500 text-white dark:text-fd-foreground">
+    <main className="flex flex-1 flex-col bg-black">
       {/* Hero */}
       <section className="px-6 py-16 md:py-24 text-center">
         <div className="mx-auto max-w-4xl">
@@ -93,7 +93,7 @@ export default function Hackkit() {
 
       {/* How it works */}
       <section className="px-6 py-12">
-        <div className="mx-auto max-w-5xl">
+        <div className="mx-auto max-w-6xl">
           <h2 className="text-2xl font-bold">How it works</h2>
           <ol className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
             <Step
@@ -122,7 +122,7 @@ export default function Hackkit() {
 
       {/* FAQ */}
       <section className="px-6 pb-20">
-        <div className="mx-auto max-w-4xl">
+        <div className="mx-auto max-w-6xl">
           <h2 className="text-2xl font-bold">FAQ</h2>
           <div className="mt-6 space-y-4">
             <Faq
@@ -151,7 +151,9 @@ Want to dive in? Explore our OSS docs (updated as features ship), or join our Di
       {/* Final CTA */}
       <section className="px-6 pb-24 text-center">
         <div className="mx-auto max-w-3xl rounded-2xl border p-8 shadow-sm">
-          <h3 className="text-xl font-bold">Ready to run your next hackathon?</h3>
+          <h3 className="text-xl font-bold">
+            Ready to run your next hackathon?
+          </h3>
           <p className="mt-2 text-fd-muted-foreground">
             Start with the docs or jump straight into the codebase.
           </p>
