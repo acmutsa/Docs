@@ -38,16 +38,9 @@ export default function HomePage() {
 
       {/* Who We Are / About the Team */}
       <section className="px-6 mb-8">
-        <div className="flex flex-col mx-auto max-w-5xl p-6 border-1 rounded-2xl">
-          <h2 className="text-3xl border-b-2 mb-4">Who We Are</h2>
-          <div className="relative">
-            <Image
-              className="float-right rounded-4xl md:flex w-30 h-30"
-              src="/img/acm_oss_logo.png"
-              width={500}
-              height={500}
-              alt="ACM Logo"
-            />
+        <div className="flex mx-auto max-w-6xl p-6 gap-2 items-center flex-wrap lg:flex-nowrap">
+          <div className="flex-1">
+            <h2 className="text-3xl border-b-2 mb-4">Who We Are</h2>
             <p className="text-lg text-fd-muted-foreground mt-2">
               ACM Projects is a organization created through ACM UTSA. We focus
               on building production-ready tools that help university clubs run
@@ -56,12 +49,21 @@ export default function HomePage() {
               real-world development experience.
             </p>
           </div>
+          <div className="mx-auto">
+            <Image
+              className="rounded-4xl w-30 h-30 flex-2"
+              src="/img/acm_oss_logo.png"
+              width={500}
+              height={500}
+              alt="ACM Logo"
+            />
+          </div>
         </div>
       </section>
 
       {/* Our Projects */}
       <section className="px-6 mb-8 scroll-mt-40" id="our-projects">
-        <div className="mx-auto max-w-6xl flex flex-col border-1 p-6 rounded-2xl">
+        <div className="mx-auto max-w-6xl flex flex-col p-6">
           <h2 className="text-3xl border-b-2 mb-4">Our Projects</h2>
           <div className="mx-auto grid max-w-6xl grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex flex-col justify-between">
@@ -70,15 +72,23 @@ export default function HomePage() {
                 title="HackKit"
                 desc="HackKit was used for ACM's biggest event RowdyHacks."
                 img="/img/rowdyhacks.png"
-                label="Users"
-                value="500"
+                stats={[
+                  {
+                    label: "Hackers Supported",
+                    value: "1000+",
+                  },
+                  {
+                    label: "Events Hosted",
+                    value: "10+",
+                  },
+                ]}
               />
-              <div className="flex justify-center items-center mt-4 gap-6">
+              <div className="flex items-center mt-4 gap-2">
                 <Link
-                  className="border-2 rounded-2xl px-4 py-2 dark:hover:bg-white/10 hover:bg-black/10"
-                  href="https://rowdyhacks.org/"
+                  className="border-2 rounded-2xl px-4 py-2 bg-blue-500 hover:opacity-90 nowrap flex items-center gap-2"
+                  href="https://hackkit.pages.dev/"
                 >
-                  Checkout RowdyHacks
+                  See it in use <ArrowRight size={18} aria-hidden />
                 </Link>
                 <Link
                   className="border-2 rounded-2xl px-4 py-2 dark:hover:bg-white/10 hover:bg-black/10"
@@ -94,15 +104,24 @@ export default function HomePage() {
                 title="ClubKit"
                 desc="ClubKit is used for ACM's organization portal."
                 img="/img/portal.png"
-                label="Users"
-                value="1000"
+                stats={[
+                  {
+                    label: "Members",
+                    value: "1000+",
+                  },
+                  {
+                    label: "Events Listed",
+                    value: "100+",
+                  },
+                ]}
               />
-              <div className="flex justify-center items-center mt-4 gap-6">
+              <div className="flex items-center mt-4 gap-2">
                 <Link
-                  className="border-2 rounded-2xl px-4 py-2 dark:hover:bg-white/10 hover:bg-black/10"
+                  className="border-2 rounded-2xl px-4 py-2 bg-blue-500 hover:opacity-90 nowrap flex items-center gap-2"
                   href="https://portal.acmutsa.org/"
                 >
-                  Checkout Portal
+                  See it in action
+                  <ArrowRight size={18} aria-hidden />
                 </Link>
                 <Link
                   className="border-2 rounded-2xl px-4 py-2 dark:hover:bg-white/10 hover:bg-black/10"
