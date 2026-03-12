@@ -91,7 +91,7 @@ export default function HomePage() {
                   See it in use <ArrowRight size={18} aria-hidden />
                 </Link>
                 <Link
-                  className="border-2 rounded-2xl px-4 py-2 dark:hover:bg-white/10 hover:bg-black/10"
+                  className="border-2 rounded-2xl px-4 py-2 bg-slate-700/50 hover:opacity-90"
                   href="/hackkit"
                 >
                   Learn more about HackKit
@@ -124,7 +124,7 @@ export default function HomePage() {
                   <ArrowRight size={18} aria-hidden />
                 </Link>
                 <Link
-                  className="border-2 rounded-2xl px-4 py-2 dark:hover:bg-white/10 hover:bg-black/10"
+                  className="border-2 rounded-2xl px-4 py-2 bg-slate-700/50 hover:opacity-90"
                   href="/clubkit"
                 >
                   Learn more about ClubKit
@@ -137,7 +137,7 @@ export default function HomePage() {
 
       {/* Our Mission/Goal */}
       <section className="px-6 mb-8">
-        <div className="mx-auto max-w-6xl flex flex-col border-1 p-6 rounded-2xl">
+        <div className="mx-auto max-w-6xl flex flex-col p-6 rounded-2xl">
           <h2 className="text-3xl border-b-2 mb-4">Our Mission</h2>
           <p>
             ACM Projects is an open-source software organization dedicated to
@@ -151,9 +151,9 @@ export default function HomePage() {
 
       {/* Meet the Team */}
       <section className="px-6 mb-8">
-        <div className="mx-auto max-w-5xl flex flex-col border-1 p-6 rounded-2xl">
+        <div className="mx-auto max-w-6xl flex flex-col p-6 rounded-2xl">
           <h2 className="text-3xl border-b-2 mb-4">Meet the Team</h2>
-          <div className="flex flex-wrap justify-center items-center gap-4">
+          <div className="flex flex-wrap justify-start items-center gap-4">
             {teamMembers.map((member) => (
               <Profile
                 key={member.link}
@@ -168,7 +168,7 @@ export default function HomePage() {
 
       {/* Get Involved */}
       <section className="px-6 mb-8">
-        <div className="mx-auto max-w-5xl flex flex-col border-1 p-6 rounded-2xl">
+        <div className="mx-auto max-w-6xl flex flex-col p-6 rounded-2xl">
           <h2 className="text-3xl border-b-2 mb-4">Get Involved</h2>
           <p>
             ACM Projects is an open-source community where students and
@@ -179,7 +179,7 @@ export default function HomePage() {
           <Link
             target="_blank"
             href="https://github.com/acmutsa"
-            className="h-fit w-fit rounded-xl border px-6 py-3 font-semibold shadow transition dark:hover:bg-white/10 hover:bg-black/10 mt-4"
+            className="h-fit w-fit rounded-xl border px-6 py-3 font-semibold shadow transition bg-slate-700/50 hover:opacity-90 mt-4"
           >
             Join Our Projects
           </Link>
