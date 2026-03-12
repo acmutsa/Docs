@@ -16,7 +16,9 @@ export default function Layout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={inter.className} suppressHydrationWarning>
       <body className="flex flex-col min-h-screen">
-        <Banner>Caution 🚧: This site is under construction</Banner>
+        <Banner id="under-construction">
+          Caution 🚧: This site is under construction
+        </Banner>
         <RootProvider>{children}</RootProvider>
       </body>
     </html>
