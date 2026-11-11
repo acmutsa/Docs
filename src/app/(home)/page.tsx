@@ -18,7 +18,7 @@ export default function HomePage() {
           <h1 className="mt-6 md:text-6xl font-extrabold tracking-tight text-5xl">
             Open <span className="text-blue-500">Software</span> for{" "}
             <span className="text-blue-500">Students</span> by UTSA's Leading
-            Tech Org
+            Tech Organization
           </h1>
           <p className="mt-4 text-lg text-fd-muted-foreground">
             We build software that empowers students and campus organizations.
